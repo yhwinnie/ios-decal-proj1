@@ -30,9 +30,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="79" width="400" height="521"/>
-                                </variation>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJn-Do-TvX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -61,9 +58,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="L34-rf-ai3" secondAttribute="trailing" id="2Ik-H4-Rs7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSU-I7-jra" secondAttribute="trailing" constant="-20" id="AOo-ju-fh9"/>
                             <constraint firstItem="L34-rf-ai3" firstAttribute="top" secondItem="NJn-Do-TvX" secondAttribute="bottom" constant="-7" id="ChS-Fm-Pey"/>
                             <constraint firstItem="NJn-Do-TvX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NSe-n2-sxe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NJn-Do-TvX" secondAttribute="trailing" constant="1" id="Tdi-ky-fiQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZSU-I7-jra" secondAttribute="bottom" id="WKw-pd-A8e"/>
+                            <constraint firstItem="ZSU-I7-jra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lWR-zO-Enr"/>
+                            <constraint firstItem="ZSU-I7-jra" firstAttribute="top" secondItem="L34-rf-ai3" secondAttribute="bottom" constant="15" id="qZe-qd-AjY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -73,10 +74,14 @@
                                 <exclude reference="L34-rf-ai3"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="NSe-n2-sxe"/>
-                                <exclude reference="Tdi-ky-fiQ"/>
+                                <exclude reference="AOo-ju-fh9"/>
+                                <exclude reference="lWR-zO-Enr"/>
+                                <exclude reference="qZe-qd-AjY"/>
                                 <exclude reference="2Ik-H4-Rs7"/>
                                 <exclude reference="ChS-Fm-Pey"/>
+                                <exclude reference="NSe-n2-sxe"/>
+                                <exclude reference="Tdi-ky-fiQ"/>
+                                <exclude reference="WKw-pd-A8e"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -87,10 +92,14 @@
                                 <include reference="L34-rf-ai3"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="NSe-n2-sxe"/>
-                                <include reference="Tdi-ky-fiQ"/>
+                                <include reference="AOo-ju-fh9"/>
+                                <include reference="lWR-zO-Enr"/>
+                                <include reference="qZe-qd-AjY"/>
                                 <include reference="2Ik-H4-Rs7"/>
                                 <include reference="ChS-Fm-Pey"/>
+                                <include reference="NSe-n2-sxe"/>
+                                <include reference="Tdi-ky-fiQ"/>
+                                <include reference="WKw-pd-A8e"/>
                             </mask>
                         </variation>
                     </view>
@@ -207,13 +216,13 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="vqr-ZL-oFF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the past 24 hours, You Have Completed " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-ad-bOe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-Qy-ZFc">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-Qy-ZFc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In 24 hours, You Have Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-ad-bOe">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,22 +232,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="kBJ-wt-ULM" secondAttribute="trailing" constant="18" id="4Ls-jG-lxQ"/>
-                            <constraint firstItem="eqE-ad-bOe" firstAttribute="centerX" secondItem="oxC-gM-U7b" secondAttribute="centerX" id="72V-q0-hSE"/>
-                            <constraint firstItem="Lzh-Qy-ZFc" firstAttribute="top" secondItem="eqE-ad-bOe" secondAttribute="bottom" constant="61" id="9xT-sE-A63"/>
+                            <constraint firstItem="Lzh-Qy-ZFc" firstAttribute="top" secondItem="eqE-ad-bOe" secondAttribute="bottom" constant="56" id="7uB-NR-H5L"/>
                             <constraint firstItem="Lzh-Qy-ZFc" firstAttribute="centerX" secondItem="oxC-gM-U7b" secondAttribute="centerX" id="c11-Ip-Fw0"/>
                             <constraint firstItem="kBJ-wt-ULM" firstAttribute="top" secondItem="gUW-Ek-JMc" secondAttribute="bottom" id="hxy-Nq-uaV"/>
-                            <constraint firstItem="eqE-ad-bOe" firstAttribute="top" secondItem="gUW-Ek-JMc" secondAttribute="bottom" constant="111" id="zN9-U9-SC7"/>
+                            <constraint firstItem="eqE-ad-bOe" firstAttribute="top" secondItem="kBJ-wt-ULM" secondAttribute="bottom" constant="86" id="mVp-fG-mFf"/>
+                            <constraint firstItem="eqE-ad-bOe" firstAttribute="centerX" secondItem="oxC-gM-U7b" secondAttribute="centerX" id="vRg-uq-hfu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="kBJ-wt-ULM"/>
-                                <exclude reference="eqE-ad-bOe"/>
                                 <exclude reference="Lzh-Qy-ZFc"/>
+                                <exclude reference="eqE-ad-bOe"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="72V-q0-hSE"/>
-                                <exclude reference="zN9-U9-SC7"/>
-                                <exclude reference="9xT-sE-A63"/>
+                                <exclude reference="mVp-fG-mFf"/>
+                                <exclude reference="vRg-uq-hfu"/>
+                                <exclude reference="7uB-NR-H5L"/>
                                 <exclude reference="c11-Ip-Fw0"/>
                                 <exclude reference="4Ls-jG-lxQ"/>
                                 <exclude reference="hxy-Nq-uaV"/>
@@ -247,13 +256,13 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="kBJ-wt-ULM"/>
-                                <include reference="eqE-ad-bOe"/>
                                 <include reference="Lzh-Qy-ZFc"/>
+                                <include reference="eqE-ad-bOe"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="72V-q0-hSE"/>
-                                <include reference="zN9-U9-SC7"/>
-                                <include reference="9xT-sE-A63"/>
+                                <include reference="mVp-fG-mFf"/>
+                                <include reference="vRg-uq-hfu"/>
+                                <include reference="7uB-NR-H5L"/>
                                 <include reference="c11-Ip-Fw0"/>
                                 <include reference="4Ls-jG-lxQ"/>
                                 <include reference="hxy-Nq-uaV"/>

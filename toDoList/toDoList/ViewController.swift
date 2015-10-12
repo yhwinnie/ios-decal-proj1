@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var timer = NSTimer()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(120, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
         
 
         //if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
@@ -118,7 +118,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             first += 1
             toDoListTable.reloadData()
             completedItem = [Int]()
-            //print("one minute has passed")
             num = 0
             numTaskCompleted = "\(num) Task"
             
@@ -129,7 +128,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         }
-        print("one minute has passed")
+        print("two minutes have passed")
     }
     
     override func viewDidAppear(animated: Bool) {
