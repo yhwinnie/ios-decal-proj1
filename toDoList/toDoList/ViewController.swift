@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var timer = NSTimer()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(120, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(3600, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
         
 
         //if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
@@ -124,11 +124,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if toDoList.isEmpty {
             deleteLabel.hidden = true
-                
         }
         
         }
-        print("two minutes have passed")
     }
     
     override func viewDidAppear(animated: Bool) {
