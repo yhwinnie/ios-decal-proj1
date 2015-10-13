@@ -79,8 +79,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let tappedItem = toDoList[indexPath.row]
         tappedItem.completed = !tappedItem.completed
         if tappedItem.completed == true {
-            tappedItem.index = indexPath.row
-            completedItem.append(tappedItem.index)
+            //tappedItem.index = indexPath.row
+            completedItem.append(indexPath.row)
             num += 1
             if num == 1 {
                 numTaskCompleted = "\(num) Task"
@@ -118,16 +118,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 toDoList.removeAtIndex(index)
             } else {
                 toDoList.removeAtIndex(index - 1)
-                print(toDoList)
             }
-            print("Two minutes have passed")
-            first += 1
-            toDoListTable.reloadData()
-            
             num = 0
             numTaskCompleted = "\(num) Task"
+            first += 1
         }
         completedItem = [Int]()
+
+        toDoListTable.reloadData()
     }
     
     override func viewDidAppear(animated: Bool) {

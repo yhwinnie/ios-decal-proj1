@@ -58,7 +58,7 @@
                   moduleName = "toDoList"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yhwinnie/Desktop/ios-decal-proj1/toDoList/toDoList/ToDoItem.swift"
-                  timestampString = "466395309.664025"
+                  timestampString = "466395475.200401"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -73,27 +73,12 @@
                   moduleName = "toDoList"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yhwinnie/Desktop/ios-decal-proj1/toDoList/toDoList/ToDoItem.swift"
-                  timestampString = "466395309.664658"
+                  timestampString = "466395475.200857"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
                   offsetFromSymbolStart = "19">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "toDoList.toDoItem.completed.materializeForSet : Swift.Bool"
-                  moduleName = "toDoList"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yhwinnie/Desktop/ios-decal-proj1/toDoList/toDoList/ToDoItem.swift"
-                  timestampString = "466395309.665711"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
