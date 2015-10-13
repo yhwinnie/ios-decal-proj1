@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var timer = NSTimer()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(3600, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(86400, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
         
 
         //if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
@@ -106,6 +106,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var first = 0
         for index in completedItem {
             print(index)
+            if toDoList.isEmpty {
+                deleteLabel.hidden = true
+                break;
+            }
+            
             if first == 0 {
                 toDoList.removeAtIndex(index)
             }
@@ -115,18 +120,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 toDoList.removeAtIndex(index - 1)
                 print(toDoList)
             }
+            print("Two minutes have passed")
             first += 1
             toDoListTable.reloadData()
-            completedItem = [Int]()
+            
             num = 0
             numTaskCompleted = "\(num) Task"
-            
-        
-        if toDoList.isEmpty {
-            deleteLabel.hidden = true
         }
-        
-        }
+        completedItem = [Int]()
     }
     
     override func viewDidAppear(animated: Bool) {

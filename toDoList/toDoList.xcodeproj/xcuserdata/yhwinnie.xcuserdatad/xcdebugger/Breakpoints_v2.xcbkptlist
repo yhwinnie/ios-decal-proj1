@@ -58,7 +58,7 @@
                   moduleName = "toDoList"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yhwinnie/Desktop/ios-decal-proj1/toDoList/toDoList/ToDoItem.swift"
-                  timestampString = "466330127.586311"
+                  timestampString = "466395309.664025"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -73,14 +73,45 @@
                   moduleName = "toDoList"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yhwinnie/Desktop/ios-decal-proj1/toDoList/toDoList/ToDoItem.swift"
-                  timestampString = "466330127.586597"
+                  timestampString = "466395309.664658"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
                   offsetFromSymbolStart = "19">
                </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toDoList.toDoItem.completed.materializeForSet : Swift.Bool"
+                  moduleName = "toDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yhwinnie/Desktop/ios-decal-proj1/toDoList/toDoList/ToDoItem.swift"
+                  timestampString = "466395309.665711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "toDoList/ViewController.swift"
+            timestampString = "466395309.616972"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "result()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
